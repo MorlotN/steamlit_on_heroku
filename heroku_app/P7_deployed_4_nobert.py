@@ -15,7 +15,7 @@ txt = st.text_area('Text to analyze', 'this is a bad comments very bad')
 data = sequence.pad_sequences(tokenizer.texts_to_sequences([txt]), maxlen=100)
 
 
-model = tf.keras.models.load_model("simple")
+model = tf.keras.models.load_model("https://github.com/MorlotN/steamlit_on_heroku/tree/master/heroku_app/simple")
 
 
 y_pred = model.predict(x=[data])
