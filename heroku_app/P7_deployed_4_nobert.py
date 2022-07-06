@@ -8,7 +8,7 @@ import streamlit as st
 from keras.preprocessing import sequence
 
 # loading
-with open('tokenizer.pickle', 'rb') as handle:
+with open('heroku_app/tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
     
 txt = st.text_area('Text to analyze', 'this is a bad comments very bad')
